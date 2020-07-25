@@ -191,11 +191,11 @@ class RandomResizedCrop(torchvision.transforms.RandomResizedCrop):
             else:
                 boxleft -= left
             if (top + bot) <= boxbot:
-                boxbot = bot - 1
+                boxbot = bot
             else:
                 boxbot -= top
             if (left + right) <= boxright:
-                boxright = right - 1
+                boxright = right
             else:
                 boxright -= left
 
